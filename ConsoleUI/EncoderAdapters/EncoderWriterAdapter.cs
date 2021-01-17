@@ -2,7 +2,7 @@
 
 namespace ConsoleUI.EncoderAdapters
 {
-    public class EncoderWriterAdapter : ITextWriter
+    public class EncoderTextWriter : ITextWriter
     {
         public string EncodedText { get ; set ; }
     }

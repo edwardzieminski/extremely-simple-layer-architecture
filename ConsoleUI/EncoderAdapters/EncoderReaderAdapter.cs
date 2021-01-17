@@ -2,9 +2,9 @@
 
 namespace ConsoleUI.EncoderAdapters
 {
-    public class EncoderReaderAdapter : TextReaderBase
+    public class EncoderTextReader : TextReaderBase
     {
-        public EncoderReaderAdapter(ITextWriter valueWriter) : base(valueWriter)
+        public EncoderTextReader(ITextWriter valueWriter) : base(valueWriter)
         {
 
         }

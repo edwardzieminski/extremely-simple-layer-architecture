@@ -5,8 +5,8 @@ Console.WriteLine("Give me some text: ");
 var textToBeEncoded = Console.ReadLine();
 
 Console.WriteLine("Encoded text: ");
-EncoderReaderAdapter encoderReaderAdapter = new EncoderReaderAdapter(new EncoderWriterAdapter());
-encoderReaderAdapter.EncodeText(textToBeEncoded);
-Console.WriteLine(encoderReaderAdapter.TextWriter.EncodedText);
+EncoderTextReader encoderTextReader = new EncoderTextReader(new EncoderTextWriter());
+encoderTextReader.EncodeText(textToBeEncoded);
+Console.WriteLine(encoderTextReader.TextWriter.EncodedText);
 
 Console.ReadKey();
